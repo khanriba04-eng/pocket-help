@@ -494,6 +494,15 @@ function clearMessage() {
   document.getElementById('messageType').selectedIndex = 0;
 }
 
+const affirmations = [
+  "You are capable of amazing things 💪",
+  "Today is a new beginning 🌈",
+  "You are stronger than you think 💖",
+  "You attract positive energy 🌻"
+];
+function showAffirmation(){ document.getElementById('affirmationText').innerText = affirmations[Math.floor(Math.random()*affirmations.length)]; }
+
+const quotesLocal = [
 
 // 📝 Generate Complaint Letter
 function generateLetter() {
